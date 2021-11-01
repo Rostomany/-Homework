@@ -115,8 +115,6 @@ void TaskSix(int* arr , int ArrayLength)
 	printf("%d", Count);
 }
 
-//Не бейте пж, я не понял как выводить двумерный массив ровно.
-void TaskSeven(int i, int j)
 {
 	srand(time(NULL));
 
@@ -137,7 +135,7 @@ void TaskSeven(int i, int j)
 		{
 			L[length][width] = (rand() % 10 + rand() % 2) * pow(-1, rand());
 
-			printf("  %d", L[length][width]);
+			printf("  %3d", L[length][width]);
 		}
 	}
 
@@ -151,7 +149,7 @@ void TaskSeven(int i, int j)
 		{
 			L[length][width] = L[length][width] * -3;
 
-			printf("  %d", L[length][width]);
+			printf("  %3d", L[length][width]);
 		}
 
 	}
